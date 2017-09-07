@@ -1,6 +1,6 @@
 // Grammar
 
-<identifier>:
+<ident>:
 First character is a letter, any proceeding characters are letters or numbers.
 
 <type>:
@@ -10,16 +10,16 @@ A primitive type: string, int, boolean, etc.
 Either an identifier (for a variable) or a literal (1, "Hello", true)
 
 Class Declaration:
-`class <identifier>`
+`class <ident>`
 
 Method Declaration:
-`method <identifier = name> requires ([<type> <identifier = name>...]) [returns <type>]`
+`method <ident = name> requires ([<type> <ident = name>...]) [returns <type>]`
 
 Variable Declaration:
-`var <type> <identifier = name> [= <value>]`
+`var <type> <ident = name> [= <value>]`
 
 Method Invocation:
-`<identifier = name>([<value>...])`
+`<ident = name>([<value>...])`
 
 Print Statement:
 `print <value>`
@@ -40,10 +40,10 @@ class Variables
 
     method main requires ()
         string str = getString()
-        printString(str)
+        coteString(str)
         
-    method printString requires (string str)
-        print str
+    method coteString requires (string str)
+        cote str
     
     method getString requires () returns string
         return "Hello"
