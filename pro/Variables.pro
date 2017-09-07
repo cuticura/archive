@@ -4,8 +4,8 @@ class Variables
         var string str = getString()
        coteString(str)
         
-    method coteString requires (string str)
+    meth coteString requires (string str)
         cote str
     
-    method getString requires () returns string
+    meth getString requires () returns string
         return "Hello"
