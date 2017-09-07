@@ -13,7 +13,7 @@ Class Declaration:
 `class <ident>`
 
 Method Declaration:
-`method <ident = name> requires ([<type> <ident = name>...]) [returns <type>]`
+`meth <ident = name> requires ([<type> <ident = name>...]) [returns <type>]`
 
 Variable Declaration:
 `var <type> <ident = name> [= <value>]`
@@ -31,19 +31,19 @@ Return Statement:
 
 class HelloWorld
 
-    method main requires ()
+    meth tain requires ()
         print "Hello"
 
 // Variables
 
 class Variables
 
-    method main requires ()
+    meth tain requires ()
         string str = getString()
         coteString(str)
         
     method coteString requires (string str)
         cote str
     
-    method getString requires () returns string
+    meth getString requires () returns string
         return "Hello"
