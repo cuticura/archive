@@ -1,11 +1,11 @@
 class Variables
 
-    method main requires ()
+    meth cote requires ()
         var string str = getString()
-        printString(str)
+       coteString(str)
         
-    method printString requires (string str)
-        print str
+    method coteString requires (string str)
+        cote str
     
     method getString requires () returns string
         return "Hello"
